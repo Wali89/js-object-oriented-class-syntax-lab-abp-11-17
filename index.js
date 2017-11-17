@@ -1,8 +1,27 @@
 class BoardMember {
-  constructor(,) {
-    this.
-    this.
-    this.
+  constructor(name, homestate, training) {
+    this.name = name;
+    this.homeState = homestate;
+    this.training = training;
   }
-  
+
+  veto() {
+    return ('No, I must disagree');
+  }
+
+  approve() {
+    return ('You can do that!');
+  }
+
+  doCharity() {
+    return ('I like to help people.')
+  }
+
+  releasePressStatement() {
+    return ('You will see great things from Scuber.')
+  }
+
+  sayHi() {
+    return ('Hi, my name is' + this.name)
+  }
 }
